@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hipertansif Retinopati Tespiti</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <header class="hero">
+          <p class="eyebrow">Fundus Görüntü Analizi</p>
+          <h1>Hipertansif Retinopati Tespit Arayüzü</h1>
+          <p class="subtitle">
+            Bu ön yüz, fundus görüntüsünü yükleyip model sonucunu göstermek için masaüstünde
+            çalışacak şekilde hazırlandı.
+          </p>
+        </header>
+
+        <div class="upload-zone" id="uploadZone">
+          <input type="file" id="imageInput" accept="image/*" hidden />
+          <img id="previewImage" alt="Yüklenen fundus görüntüsü önizlemesi" />
+          <div class="upload-placeholder" id="uploadPlaceholder">
+            <p class="upload-title">Fundus görselini yükle</p>
+            <p class="upload-help">PNG / JPG dosyasını sürükle-bırak veya seçmek için tıkla</p>
+            <button type="button" class="btn secondary" id="btnPickImage">Dosya Seç</button>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="button" class="btn primary" id="btnAnalyze" disabled>Analizi Başlat</button>
+        </div>
+
+        <section class="result-panel" id="resultPanel" aria-live="polite">
+          <h2>Sonuç</h2>
+          <p class="result-text" id="resultText">Henüz analiz yapılmadı.</p>
+          <p class="result-score" id="resultScore">Güven skoru: —</p>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
