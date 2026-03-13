@@ -1,0 +1,22 @@
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller build and dist folders
+build/
+dist/
+*.spec
+*.pkg
+PyQt_App/build/
+PyQt_App/dist/
+
+# Executables
+*.exe
+
+# Large model weights (GitHub 100MB limit)
+*.pth
+*.pt
+densenet121/
+efficientnet_b0/
+unetpp/
